@@ -91,7 +91,7 @@ func getDBDir() (string, error) {
 	examplesDir := filepath.Dir(testutilDir)
 
 	// The db directory is examples/db
-	dbDir := filepath.Join(examplesDir, "homework/db")
+	dbDir := filepath.Join(examplesDir, "db")
 
 	// Ensure db directory exists
 	if err := os.MkdirAll(dbDir, 0755); err != nil {
